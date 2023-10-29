@@ -35,23 +35,23 @@ function readLine() {
 *   secondString - A string consisting of one or more space-separated words.
 **/
 function performOperation(secondInteger, secondDecimal, secondString) {
-    // Declare a variable named 'firstInteger' and initialize with integer value 4.
+    // Declare a variable named 'firstInteger' and initialize it with an integer value of 4.
     const firstInteger = 4;
-    
-    // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
+
+    // Declare a variable named 'firstDecimal' and initialize it with a floating-point value of 4.0.
     const firstDecimal = 4.0;
-    
-    // Declare a variable named 'firstString' and initialize with the string "HackerRank".
+
+    // Declare a variable named 'firstString' and initialize it with the string "HackerRank ".
     const firstString = 'HackerRank ';
-    
-    // Convert 'secondInteger' to a Number type and calculate the sum with 'firstInteger'.
-    // Then, use console.log to print the result on a new line.
-    console.log(firstInteger + parseInt(secondInteger, 10));
-    
-    // Convert 'secondDecimal' to a Number type and calculate the sum with 'firstDecimal'.
-    // Then, use console.log to print the result on a new line.
-    console.log((firstDecimal + parseFloat(secondDecimal)).toFixed(2));
-    
-    // Concatenate 'firstString' and 'secondString', and use console.log to print the result on a new line.
+
+    // Convert 'secondInteger' to an integer (Number type), sum it with 'firstInteger', and print the result.
+    const sumOfIntegers = firstInteger + parseInt(secondInteger);
+    console.log(sumOfIntegers);
+
+    // Convert 'secondDecimal' to a floating-point number (Number type), sum it with 'firstDecimal', and print the result.
+    const sumOfDecimals = firstDecimal + parseFloat(secondDecimal);
+    console.log(sumOfDecimals);
+
+    // Print the concatenation of 'firstString' and 'secondString' (with 'firstString' printed first).
     console.log(firstString + secondString);
 }
